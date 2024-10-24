@@ -51,3 +51,28 @@ while (count > 1) {
     console.log(n, " is a prime number");
     count -= 1;
 } */
+    if (char == "," || char == "\n") {
+        switch (cellNum) {
+            case 1:
+                cell1 = cell;
+                break;
+            case 2:
+                cell2 = cell;
+                break;
+            case 3:
+                cell3 = cell;
+                break;
+            case 4:
+                cell4 = cell;
+                break;
+        }
+        if (cellNum == 4){
+            cellNum = 1;
+        }
+        else {
+            cellNum += 1;
+        }
+        cell = "";
+    } else {
+        cell += char;
+    }
