@@ -19,3 +19,35 @@ for (let num = 1; num <= 100; num++) {
         console.log(num);
     }
 }
+console.log("============Part NI! ===================");
+let n = 49;
+while (n) {
+    //Check if n is a prime number
+    n += 1
+    let count = n - 1;
+    let isPrime = true;
+    while (count > 1) {
+ 
+        if (n % count == 0) {
+            isPrime = false;
+            break;
+        }
+        count-=1
+    }
+    if (isPrime){
+        console.log(n, "is a Prime number");
+        break;
+    } 
+}
+
+/* let up = 12;
+
+while (count > 1) {
+    // console.log(n+"%"+count);
+    if (n % count == 0) {
+        console.log(n, " is not a Prime number");
+        break;
+    }
+    console.log(n, " is a prime number");
+    count -= 1;
+} */
